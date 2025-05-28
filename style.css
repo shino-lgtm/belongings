@@ -1,0 +1,75 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #e0f7f9; /* ティファニーブルー */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #0abab5;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+#checklist-container {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.category {
+  margin-bottom: 25px;
+}
+
+.category h2 {
+  color: #0abab5;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #0abab5;
+  padding-bottom: 5px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.item input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.add-item {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#new-item {
+  padding: 8px;
+  width: 60%;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+}
+
+button {
+  background-color: #0abab5;
+  color: white;
+  border: none;
+  padding: 9px 15px;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #099e9a;
+}
