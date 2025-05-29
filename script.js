@@ -30,7 +30,7 @@ function renderChecklist() {
     section.className = "category";
 
     const title = document.createElement("h2");
-    title.innerHTML = `${category} <button onclick="deleteCategory('${category}')">🗑</button>`;
+    title.textContent = category;
     section.appendChild(title);
 
     items.forEach((item, itemIndex) => {
@@ -66,14 +66,6 @@ function addItem() {
   checklistData["その他"].push(value);
   input.value = "";
   renderChecklist();
-}
-
-function deleteCategory(category) {
-  if (confirm(`「${category}」カテゴリを削除しますか？`)) {
-    delete checklistData[category];
-    renderChecklist();
-    saveChecklist();
-  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
