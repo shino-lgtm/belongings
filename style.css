@@ -1,75 +1,94 @@
 body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #e0f7f9; /* ティファニーブルー */
-  color: #333;
+  font-family: 'Arial', sans-serif;
+  background-color: #e0f7f9;
+  background-image: url('https://www.transparenttextures.com/patterns/white-wall.png');
+  background-repeat: repeat;
   margin: 0;
   padding: 20px;
+  color: #333;
 }
 
 h1 {
-  color: #0abab5;
+  color: #0099a8;
   text-align: center;
-  font-size: 28px;
-  margin-bottom: 30px;
-}
-
-#checklist-container {
-  max-width: 600px;
-  margin: 0 auto 40px;
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 .category {
-  margin-bottom: 25px;
+  background: #ffffffcc;
+  border-left: 6px solid #0099a8;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0 0 8px #ccc;
 }
 
-.category h2 {
-  color: #0abab5;
-  font-size: 20px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #0abab5;
-  padding-bottom: 5px;
+h2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #006b78;
 }
 
 .item {
   display: flex;
   align-items: center;
-  margin-bottom: 8px;
+  margin: 5px 0;
 }
 
 .item input[type="checkbox"] {
   margin-right: 10px;
-  transform: scale(1.2);
 }
 
 .add-item {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 #new-item {
-  padding: 8px;
+  padding: 10px;
   width: 60%;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #aaa;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 button {
-  background-color: #0abab5;
+  background-color: #0099a8;
   color: white;
   border: none;
-  padding: 9px 15px;
-  border-radius: 8px;
-  margin-left: 10px;
-  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #099e9a;
+  background-color: #007c88;
+}
+
+/* モバイル対応 */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  #checklist-container, .add-item {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #new-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
 }
